@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Wedding Invitation ❤️</title>
+    <title>Two Hearts, One Journey ❤️</title>
 
 
     <!-- Bootstrap -->
@@ -51,27 +51,35 @@
 
             <ul class="navbar-nav ms-auto">
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#home">
+            Home
+        </a>
+    </li>
 
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Story</a>
-                </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#story">
+            Story
+        </a>
+    </li>
 
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Events</a>
-                </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#gallery">
+            Gallery
+        </a>
+    </li>
 
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Gallery</a>
-                </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#events">
+            Events
+        </a>
+    </li>
 
 
-            </ul>
+</ul>
 
         </div>
 
@@ -86,8 +94,7 @@
 
 <!-- Engagement Hero Start -->
 
-<section class="hero">
-
+<section class="hero" id="home">
     <div class="overlay"></div>
 
     <div class="hero-content text-center">
@@ -123,10 +130,9 @@
         </div>
 
 
-        <button class="save-btn">
-            View Memories
-        </button>
-
+        <a href="#gallery" class="save-btn">
+    View Memories
+</a>
 
         <div class="scroll">
             ↓ Scroll Down
@@ -142,7 +148,7 @@
 
 <!-- Engagement Details Start -->
 
-<section class="details">
+<section class="details" id="events">
 
     <div class="container">
 
@@ -202,7 +208,7 @@
                     </div>
 
                     <h3>
-                        Celebration Venue
+                        Celebration 
                     </h3>
 
                     <p>
@@ -211,7 +217,7 @@
                     </p>
 
                     <h5>
-                        Venue Name
+                        Jamnagar
                     </h5>
 
                 </div>
@@ -535,7 +541,7 @@
 
 <!-- Gallery Start -->
 
-<section class="gallery-section">
+<section class="gallery-section" id="gallery">
 
     <div class="container">
 
@@ -773,15 +779,17 @@
 
             <!-- Map -->
 
-            <div class="col-lg-7 mb-4">
+            <div class="col-lg-6 mb-9">
 
 
                 <div class="map-box">
 
-                    <iframe
-                    src="YOUR_GOOGLE_MAP_EMBED_LINK"
-                    loading="lazy">
-                    </iframe>
+                   <div class="gallery-item">
+
+                    <img src="assets/images/gallery7.jpeg"
+                    alt="Memory">
+
+                </div>
 
                 </div>
 
@@ -809,8 +817,7 @@
 
 
                     <p>
-                        Complete address of
-                        engagement celebration.
+                       Where traditions meet love, in the beautiful city of Jamnagar✨                      
                     </p>
 
 
@@ -849,6 +856,15 @@
 
 
 </body>
+
+
+<!-- Background Music -->
+
+<audio id="bgMusic" loop>
+
+    <source src="assets/music/song.mp3" type="audio/mp3">
+
+</audio>
 
 
 <div class="hearts">
@@ -890,7 +906,7 @@ ScrollReveal().reveal(
 
 
         <h2>
-            Brother Name ❤️ Bride Name
+            Ajay ❤️ Janvi
         </h2>
 
 
@@ -919,7 +935,7 @@ ScrollReveal().reveal(
 
 <!-- Music Button -->
 
-<button class="music-btn">
+<button class="music-btn" onclick="toggleMusic()">
 
     🎵
 

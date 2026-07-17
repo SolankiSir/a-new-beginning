@@ -24,3 +24,28 @@ setInterval(function () {
     document.getElementById("seconds").innerHTML = seconds;
 
 },1000);
+
+const music = document.getElementById("bgMusic");
+
+let playing = false;
+
+
+function toggleMusic(){
+
+    if(playing){
+
+        music.pause();
+
+        playing = false;
+
+    }
+
+    else{
+
+        music.play();
+
+        playing = true;
+
+    }
+
+}
