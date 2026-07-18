@@ -650,6 +650,46 @@
 
 <!-- Gallery End -->
 
+<!-- Video Section Start -->
+
+<section class="video-section" id="highlights">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <p class="section-subtitle">
+                HIGHLIGHT FILM
+            </p>
+
+            <h2 class="section-title">
+                Engagement Highlights
+            </h2>
+
+            <p class="video-text">
+                Every smile tells a story
+            </p>
+
+        </div>
+
+        <div class="video-box">
+
+            <video controls poster="assets/images/video-thumbnail.jpg">
+
+                <source src="assets/videos/engagement.mp4" type="video/mp4">
+
+                Your browser does not support the video tag.
+
+            </video>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Video Section End -->
+
 <!-- Wishes Section Start -->
 
 <section class="wishes">
@@ -753,6 +793,85 @@
 
 <!-- Wishes Section End -->
 
+<!-- Guest Book Section -->
+
+<section class="guestbook" id="guestbook">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <p class="section-subtitle">
+                SHARE YOUR LOVE
+            </p>
+
+            <h2 class="section-title">
+                Guest Wishes 💌
+            </h2>
+
+            <p>
+                Leave your blessings and beautiful wishes for the couple.
+            </p>
+
+        </div>
+
+
+        <!-- Wish Form -->
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-7">
+
+
+                <div class="guestbook-card">
+
+
+                    <input 
+                    type="text"
+                    id="guestName"
+                    class="form-control mb-3"
+                    placeholder="Your Name">
+
+
+                    <textarea
+                    id="guestWish"
+                    class="form-control mb-3"
+                    rows="4"
+                    placeholder="Write your wishes..."></textarea>
+
+
+                    <button 
+onclick="addWish()" 
+class="btn btn-warning w-100 wish-submit">
+
+    Send Wishes ❤️
+
+</button>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Wishes Display -->
+
+        <div class="row mt-5 g-4" id="wishList">
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+<!-- Guest Book End -->
+
 <!-- Venue Section Start -->
 
 <section class="venue">
@@ -852,10 +971,46 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
 
-<script src="script.js"></script>
+<!-- Firebase Code -->
+
+<script type="module">
+
+import { initializeApp } 
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+
+import { getFirestore }
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 
-</body>
+const firebaseConfig = {
+  apiKey: "AIzaSyAFM_Nbtv-lTEwi3AseW5TsZ3xDh2gaHRc",
+  authDomain: "engagement-websitee.firebaseapp.com",
+  projectId: "engagement-websitee",
+  storageBucket: "engagement-websitee.firebasestorage.app",
+  messagingSenderId: "998221138654",
+  appId: "1:998221138654:web:0ed3b1e467a28bdce6904f",
+
+};
+
+
+const app = initializeApp(firebaseConfig);
+
+const db = getFirestore(app);
+
+
+window.db = db;
+
+
+</script>
+
+
+<!-- Your JavaScript -->
+
+<script type="module" src="script.js"></script>
+
+
+
+
 
 
 <!-- Background Music -->
@@ -941,4 +1096,5 @@ ScrollReveal().reveal(
 
 </button>
 
+</body>
 </html>

@@ -1143,3 +1143,43 @@ html{
     transition:.3s;
 
 }
+
+/* Video Section */
+
+.video-section{
+
+    padding:100px 0;
+
+    background:#ffffff;
+
+}
+
+.video-text{
+
+    max-width:650px;
+
+    margin:15px auto 40px;
+
+    color:#666;
+
+}
+
+.video-box{
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+}
+
+.video-box video{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:25px;
+
+}
